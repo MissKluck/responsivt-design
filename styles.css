@@ -33,15 +33,39 @@ html {
   .main {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
   }
 }
 
 .content-section {
   margin: 0 px auto;
   background-color: darksalmon;
-  padding: 10px 20px;
   border-radius: 4px;
   min-height: 300px;
-  max-width: 300px;
+  max-width: 400px;
+  width: 100%;
+
+  font-size: 1vw;
+  padding: 1em 2em;
+}
+
+.content-image {
   width: 100%;
 }
+
+.content-title {
+  text-align: center;
+  
+}
+
+.content-details {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .content-details {
+    display: block; 
+  }
+  
+}
+
